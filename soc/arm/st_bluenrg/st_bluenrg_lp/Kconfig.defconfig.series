@@ -1,0 +1,15 @@
+# ST Microelectronics bluenrg-lp SoC line
+
+# Copyright (c) 2021 Electrolance Solutions
+# SPDX-License-Identifier: Apache-2.0
+
+# Kconfig symbols common to bluenrg-lp series
+
+if SOC_SERIES_BLUENRG_LP
+
+source "soc/arm/st_bluenrg/st_bluenrg_lp/Kconfig.defconfig.st_bluenrg_lp*"
+
+config SOC_SERIES
+	default "bluenrg_lp"
+
+endif # SOC_SERIES_BLUENRG_LP

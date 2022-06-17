@@ -1,0 +1,14 @@
+# ST Microelectronics bluenrg-lp SoC line
+
+# Copyright (c) 2021 Electrolance Solutions
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "ST BLUENRG LP SoC Selection"
+	depends on SOC_SERIES_BLUENRG_LP
+
+config SOC_ST_BLUENRG_LP_3X5XX
+	bool "ST_BLUENRG_LP_3X5XX"
+	select CPU_HAS_ARM_MPU
+
+endchoice

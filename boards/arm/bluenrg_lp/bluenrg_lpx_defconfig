@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# Zephyr Kernel Configuration
+CONFIG_SOC_SERIES_ST_BLUENRG_LP=y
+
+# Platform Configuration
+CONFIG_SOC_ST_BLUENRG_LP_3X5XX=y
+CONFIG_BOARD_BLUENRG_LP =y
+
+# Enable MPU
+CONFIG_ARM_MPU=y
+

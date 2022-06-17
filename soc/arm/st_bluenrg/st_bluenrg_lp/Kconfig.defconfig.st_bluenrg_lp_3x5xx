@@ -1,0 +1,14 @@
+# ST Microelectronics STM32L010XX MCU
+#
+# Copyright (c) 2021 Wouter Cappelle <wouter.cappelle@crodeon.com>
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_ST_BLUENRG_LP_3X5XX
+
+config SOC
+	default "ST_BLUENRG_LP_3X5XX"
+
+config NUM_IRQS
+	default 32
+
+endif # SOC_ST_BLUENRG_LP_3X5XX

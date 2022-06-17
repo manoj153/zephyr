@@ -1,0 +1,18 @@
+identifier: bluenrg_lp
+name: BLUENRG_LP
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 20
+flash: 192
+testing:
+  ignore_tags:
+    - net
+supported:
+  - gpio
+  - pinmux
+  - eeprom
+  - nvs

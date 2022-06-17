@@ -1,0 +1,14 @@
+# ST BLUENRG LP SoC series
+
+# Copyright (c) 2021 Electrolance Solutions
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_SERIES_ST_BLUENRG_LP
+	bool "ST BlueNRG LP Series SoC"
+	select ARM
+	select CPU_CORTEX_M0PLUS
+	select CPU_CORTEX_M_HAS_VTOR
+	select SOC_FAMILY_BLUENRG
+	select CPU_CORTEX_M_HAS_SYSTICK
+	help
+	  Enable support for ST BlueNRG LP MCU series
