@@ -1,0 +1,19 @@
+/*
+ * Copyright (c) 2023 Efinix Inc.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#ifndef ZEPHYR_DRIVERS_GPIO_EFINIX_SAPPHIRE_PRIV_H_
+#define ZEPHYR_DRIVERS_GPIO_EFINIX_SAPPHIRE_PRIV_H_
+
+#define BSP_GPIO_INPUT                  0x00
+#define BSP_GPIO_OUTPUT                 0x04
+#define BSP_GPIO_OUTPUT_ENABLE          0x08
+#define BSP_GPIO_INTERRUPT_RISE_ENABLE  0x20
+#define BSP_GPIO_INTERRUPT_FALL_ENABLE  0x24
+#define BSP_GPIO_INTERRUPT_HIGH_ENABLE  0x28
+#define BSP_GPIO_INTERRUPT_LOW_ENABLE   0x2c
+
+
+#endif /* ZEPHYR_DRIVERS_GPIO_EFINIX_SAPPHIRE_PRIV_H_ */
