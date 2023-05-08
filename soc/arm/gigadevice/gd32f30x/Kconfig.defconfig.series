@@ -1,0 +1,8 @@
+if SOC_SERIES_GD32F30X
+
+source "soc/arm/gigadevice/gd32f30x/Kconfig.defconfig.gd32*"
+
+config SOC_SERIES
+	default "gd32f30x"
+
+endif # SOC_SERIES_GD32F30X

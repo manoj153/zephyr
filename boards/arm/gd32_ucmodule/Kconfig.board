@@ -1,0 +1,6 @@
+# Copyright (c) 2021, ATL Electronics
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_GD32_UC_MODULE
+	bool "GigaDevice GD32F303 UC-Module"
+	depends on SOC_GD32F303

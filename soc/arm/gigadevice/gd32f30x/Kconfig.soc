@@ -1,0 +1,8 @@
+choice
+	prompt "GigaDevice GD32F30X MCU Selection"
+	depends on SOC_SERIES_GD32F30X
+
+	config SOC_GD32F303
+		bool "gd32f303"
+
+endchoice
