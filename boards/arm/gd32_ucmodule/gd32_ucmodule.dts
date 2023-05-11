@@ -73,9 +73,19 @@
 		led0 = &led2;
 		led1 = &led3;
 		sw0 = &user_key1;
-		pwm-led0 = &pwm_led;
+		
 		*/
+		pwm-led0 = &pwm_led;
 		watchdog0 = &fwdgt;
+
+	};
+
+	pwmleds {
+		compatible = "pwm-leds";
+
+		pwm_led: pwm_led {
+			pwms = <&pwm0 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+		};
 	};
 };
 
@@ -97,6 +107,17 @@
 	current-speed = <115200>;
 	pinctrl-0 = <&usart0_default>;
 	pinctrl-names = "default";
+};
+
+&timer0 {
+	status = "okay";
+	prescaler = <256>;
+
+	pwm0: pwm {
+		status = "okay";
+		pinctrl-0 = <&pwm0_default>;
+		pinctrl-names = "default";
+	};
 };
 
 
