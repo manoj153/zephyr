@@ -124,3 +124,16 @@
 &fwdgt {
 	status = "okay";
 };
+
+&i2c0 {
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-names = "default";
+
+	pinctrl-names = "default";
+	bme280@76 {
+		compatible = "bosch,bme280";
+		status = "okay";
+		reg = <0x76>;
+	};
+};

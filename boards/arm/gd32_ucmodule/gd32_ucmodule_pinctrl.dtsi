@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021, Teslabs Engineering S.L.
+ * Copyright (c) 2023, Electrolance Solutions
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -15,6 +15,13 @@
 	pwm0_default: pwm0_default {
 		group1 {
 			pinmux = <TIMER0_CH0_PA8_OUT>;
+		};
+	};
+
+	i2c0_default: i2c0_default {
+		group1 {
+			pinmux = <I2C0_SCL_PB6_NORMP>, <I2C0_SDA_PB7_NORMP>;
+			drive-open-drain;
 		};
 	};
 
