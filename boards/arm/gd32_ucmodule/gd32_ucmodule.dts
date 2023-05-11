@@ -83,15 +83,14 @@
 	status = "okay";
 };
 
-/*
+&gpiob {
+	status = "okay";
+};
+
 &gpioc {
 	status = "okay";
 };
 
-&gpiof {
-	status = "okay";
-};
-*/
 
 &usart1 {
 	status = "okay";
